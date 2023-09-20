@@ -2,6 +2,7 @@ public class MathEx
 {
     public static void main(String[] args)
     {
+        System.out.println("");
         System.out.println(swap(123));
         System.out.println(swap(1234));
         System.out.println(swap(12345));
@@ -16,6 +17,7 @@ public class MathEx
         System.out.println(dayOfWeek(1, 24));
         System.out.println(dayOfWeek(2, 1));
     }
+    /**swaps the last two digits of an integer*/
     static int swap(final int numin)
     {
         int numout = (numin/100)*100;
@@ -23,6 +25,7 @@ public class MathEx
         numout += (numin%10)*10;
         return numout;
     }
+    /**returns amount of time between two given times*/
     static String timeLeft(
         final int curHour, final int curMin, 
         final int depHour, final int depMin) 
@@ -32,6 +35,9 @@ public class MathEx
         final String outStr = outHour + " hours and " + outMin + " minutes.";
         return outStr;     
     }
+    /**returns the current day of week given the day of week the month started on and current date.
+     *(0 - Sunday, 2 - Monday, ETC.)
+    */
     static int dayOfWeek(final int firstDay, final int curDate)
     {
         return (((curDate-1)+firstDay)%7);
