@@ -5,10 +5,10 @@ public class MathEx
         System.out.println(swap(123));
         System.out.println(swap(1234));
         System.out.println(swap(12345));
-        System.out.println("\n");
+        System.out.println("");
         System.out.println(timeLeft(1, 15, 4, 36));
         System.out.println(timeLeft(1, 34, 8, 20));
-        System.out.println("\n");
+        System.out.println("");
         System.out.println(dayOfWeek(0, 1));
         System.out.println(dayOfWeek(0, 14));
         System.out.println(dayOfWeek(6, 22));
