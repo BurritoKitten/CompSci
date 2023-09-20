@@ -1,16 +1,12 @@
-public class StarFigures{
+public class MathEx{
     public static void main(String[] args) {
-        System.out.println(snowflake("x") + "\n" + snowflake("x") + snowflake("l") + snowflake("x"));
+        System.out.println(swap(123));
     }
-    static int swap(final int leinput) {
-        String retr = "";
-        if (type == "x") {
-            retr = repeater(repeater("*", 5) + "\n", 2) + " * *\n  *\n * *\n";
-        }
-        else {
-            retr = repeater(repeater("*", 5) + "\n", 2) + "\n" + repeater("  *\n", 3);
-        }
-        return retr;
+    static int swap(final int numin) {
+        int numout = (numin/100)*100;
+        numout += (numin/10)%10;
+        numout += (numin%10)*10;
+        return numout;
     }
     public static String repeater(final String charin, final int num) {
         String outnow = "";
