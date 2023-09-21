@@ -20,18 +20,13 @@ public class MathEx
     /**swaps the last two digits of an integer*/
     static int swap(final int numin)
     {
-        int numout = (numin/100)*100;
-        numout += (numin/10)%10;
-        numout += (numin%10)*10;
-        return numout;
+        return ((numin/100)*100)+((numin/10)%10)+((numin%10)*10);
     }
     /**returns amount of time between two given times*/
-    static String timeLeft(
-        final int curHour, final int curMin, 
-        final int depHour, final int depMin) 
+    static String timeLeft (final int curHour, final int curMin, final int depHour, final int depMin) 
     {
         final int outHour = (curMin <= depMin) ? (depHour - curHour) : (depHour - 1 - curHour);
-        final int outMin = (curMin <= depMin) ? (depMin - curMin) : (depMin + 60 - curMin);
+        final int outMin  = (curMin <= depMin) ? (depMin - curMin)   : (depMin + 60 - curMin);
         final String outStr = outHour + " hours and " + outMin + " minutes.";
         return outStr;     
     }
