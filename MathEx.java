@@ -45,7 +45,7 @@ public class MathEx
     static int dayOfWeek(final int firstDay, final int curDate)
     {
         assert (firstDay < 7): "please provide a valid first day of week. 0=Sunday, 1=Monday, etc.";
-        assert (firstDay >=0 & curDate >=0): "dayOfWeek cannot handle a negative date.";
+        assert (firstDay >=0 & curDate >=0): "dayOfWeek cannot handle a negative date or day of week.";
         return (((curDate-1)+firstDay)%7);
     }
 }
