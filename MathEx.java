@@ -1,21 +1,19 @@
+import java.util.Scanner;
 public class MathEx
 {
     public static void main(String[] args)
     {
-        System.out.println("");
-        System.out.println(swap(123));
-        System.out.println(swap(1234));
-        System.out.println(swap(12345));
-        System.out.println("");
-        System.out.println(timeLeft(1, 15, 4, 36));
-        System.out.println(timeLeft(1, 34, 8, 20));
-        System.out.println("");
-        System.out.println(dayOfWeek(0, 1));
-        System.out.println(dayOfWeek(0, 14));
-        System.out.println(dayOfWeek(6, 22));
-        System.out.println(dayOfWeek(5, 4));
-        System.out.println(dayOfWeek(1, 24));
-        System.out.println(dayOfWeek(2, 1));
+        assert (swap(123)) == 132;
+        assert (swap(1234)) == 1243;
+        assert (swap(12345)) == 12354;
+        assert (timeLeft(1, 15, 4, 36)) == "3 hours and 21 minutes.": "timeLeft failed";
+        assert (timeLeft(1, 34, 8, 20)) == "6 hours and 46 minutes.": "timeLeft failed";
+        assert (dayOfWeek(0, 1)) == 0;
+        assert (dayOfWeek(0, 14)) == 6;
+        assert (dayOfWeek(6, 22)) == 6;
+        assert (dayOfWeek(5, 4)) == 1;
+        assert (dayOfWeek(1, 24)) == 3;
+        assert (dayOfWeek(2, 1)) == 2;
     }
     /**swaps the last two digits of an integer*/
     static int swap(final int numin)
