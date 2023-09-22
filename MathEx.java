@@ -2,16 +2,17 @@ public class MathEx
 {   
     public static void main(String[] args)
     {
+        System.out.println ();
         System.out.println (swap(123  ));
         System.out.println (swap(1234 ));
         System.out.println (swap(12345));
-        
+        System.out.println ();
         timeLeft(1, 15, 4, 36);
         timeLeft(1, 34, 8, 20);
-
+        System.out.println ();
         timeLeftNoLogic(1, 15, 4, 36);
         timeLeftNoLogic(1, 34, 8, 20);
-        
+        System.out.println ();
         System.out.println (dayOfWeek(0, 1 ));
         System.out.println (dayOfWeek(0, 14));
         System.out.println (dayOfWeek(6, 22));
@@ -19,7 +20,6 @@ public class MathEx
         System.out.println (dayOfWeek(1, 24));
         System.out.println (dayOfWeek(2, 1 ));
 
-        assert (false): "valid syntax proof. NOT AN ERROR!";
     }
     /**swaps the last two digits of an integer*/
     static int swap(final int numin)
