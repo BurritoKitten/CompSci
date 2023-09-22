@@ -6,7 +6,6 @@ public class MathEx
         assert (swap(123)) == 132: "swap failed on trial one";
         assert (swap(1234)) == 1243: "swap failed on trial two";
         assert (swap(12345)) == 12354: "swap failed on trial three";
-        System.out.println(timeLeft(1, 15, 4, 36));
         assert (timeLeft(1, 15, 4, 36)).equals ("3 hours and 21 minutes."): "timeLeft failed on trial one";
         assert (timeLeft(1, 34, 8, 20)).equals ("6 hours and 46 minutes."): "timeLeft failed on trial two";
         assert (dayOfWeek(0, 1)) == 0: "dayOfWeek failed on trial one";
