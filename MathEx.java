@@ -28,8 +28,7 @@ public class MathEx
     {
         final int outHour = (curMin <= depMin) ? (depHour - curHour) : (depHour - 1 - curHour);
         final int outMin  = (curMin <= depMin) ? (depMin - curMin)   : (depMin + 60 - curMin);
-        final String outStr = outHour + " hours and " + outMin + " minutes.";
-        return outStr;     
+        return outHour + " hours and " + outMin + " minutes.";     
     }
     /**returns the current day of week given the day of week the month started on and current date.
      *(0 - Sunday, 2 - Monday, ETC.)
