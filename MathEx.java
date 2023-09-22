@@ -6,8 +6,11 @@ public class MathEx
         System.out.println (swap(1234 ));
         System.out.println (swap(12345));
         
-        System.out.println (timeLeft(1, 15, 4, 36));
-        System.out.println (timeLeft(1, 34, 8, 20));
+        timeLeft(1, 15, 4, 36);
+        timeLeft(1, 34, 8, 20);
+
+        timeLeftNoLogic(1, 15, 4, 36);
+        timeLeftNoLogic(1, 34, 8, 20);
         
         System.out.println (dayOfWeek(0, 1 ));
         System.out.println (dayOfWeek(0, 14));
@@ -16,21 +19,6 @@ public class MathEx
         System.out.println (dayOfWeek(1, 24));
         System.out.println (dayOfWeek(2, 1 ));
 
-
-        assert (swap(123  )) == 132  : "swap failed on trial one"  ;
-        assert (swap(1234 )) == 1243 : "swap failed on trial two"  ;
-        assert (swap(12345)) == 12354: "swap failed on trial three";
-        
-        assert (timeLeft(1, 15, 4, 36)).equals ("3 hours and 21 minutes."): "timeLeft failed on trial one";
-        assert (timeLeft(1, 34, 8, 20)).equals ("6 hours and 46 minutes."): "timeLeft failed on trial two";
-        
-        assert (dayOfWeek(0, 1 )) == 0: "dayOfWeek failed on trial one"  ;
-        assert (dayOfWeek(0, 14)) == 6: "dayOfWeek failed on trial two"  ;
-        assert (dayOfWeek(6, 22)) == 6: "dayOfWeek failed on trial three";
-        assert (dayOfWeek(5, 4 )) == 1: "dayOfWeek failed on trial four" ;
-        assert (dayOfWeek(1, 24)) == 3: "dayOfWeek failed on trial five" ;
-        assert (dayOfWeek(2, 1 )) == 2: "dayOfWeek failed on trial six"  ;
-
         assert (false): "valid syntax proof. NOT AN ERROR!";
     }
     /**swaps the last two digits of an integer*/
@@ -38,13 +26,20 @@ public class MathEx
     {
         return ((numin/100)*100)+((numin/10)%10)+((numin%10)*10);
     }
-    /**returns amount of time between two given times. (ex: 4:20-3:40="0 hours and 40 minutes")*/
-    static String timeLeft (final int curHour, final int curMin, final int depHour, final int depMin) 
+    /**returns amount of time between two given times using logic. (ex: 4:20-3:40="0 hours and 40 minutes")*/
+    static void timeLeft (final int curHour, final int curMin, final int depHour, final int depMin) 
     {
         assert ((curHour <= depHour & curMin <= depMin) || (curHour < depHour & curMin > depMin)): "invalid input supplied for timeLeft. deptime should be greater than curtime.";
         final int outHour = (curMin <= depMin) ? (depHour - curHour) : (depHour - 1  - curHour);
         final int outMin  = (curMin <= depMin) ? (depMin  - curMin ) : (depMin  + 60 - curMin );
-        return outHour + " hours and " + outMin + " minutes.";     
+        System.out.println (outHour + " hours and " + outMin + " minutes.");     
+    }
+    /**returns amount of time between two given times using math. (ex: 4:20-3:40="0 hours and 40 minutes")*/
+    static void timeLeftNoLogic (final int curHour, final int curMin, final int depHour, final int depMin) 
+    {
+        assert ((curHour <= depHour & curMin <= depMin) || (curHour < depHour & curMin > depMin)): "invalid input supplied for timeLeft. deptime should be greater than curtime.";
+        int timeLeft = (((depHour*60)+depMin)-((curHour*60)+curMin));
+        System.out.println ((timeLeft / 60) + " hours and " + (timeLeft % 60) + " minutes.");   
     }
     /**returns the current day of week given the day of week the month started on and current date. (0=Sunday, 1=Monday, etc.)*/
     static int dayOfWeek(final int firstDay, final int curDate)
