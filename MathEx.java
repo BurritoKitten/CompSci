@@ -3,17 +3,20 @@ public class MathEx
 {
     public static void main(String[] args)
     {
-        assert (swap(123)) == 132;
-        assert (swap(1234)) == 1243;
-        assert (swap(12345)) == 12354;
-        assert (timeLeft(1, 15, 4, 36)) == "3 hours and 21 minutes.": "timeLeft failed";
-        assert (timeLeft(1, 34, 8, 20)) == "6 hours and 46 minutes.": "timeLeft failed";
-        assert (dayOfWeek(0, 1)) == 0;
-        assert (dayOfWeek(0, 14)) == 6;
-        assert (dayOfWeek(6, 22)) == 6;
-        assert (dayOfWeek(5, 4)) == 1;
-        assert (dayOfWeek(1, 24)) == 3;
-        assert (dayOfWeek(2, 1)) == 2;
+        assert (swap(123)) == 132: "swap failed on trial one";
+        assert (swap(1234)) == 1243: "swap failed on trial two";
+        assert (swap(12345)) == 12354: "swap failed on trial three";
+        System.out.println(timeLeft(1, 15, 4, 36));
+        assert (timeLeft(1, 15, 4, 36)).equals ("3 hours and 21 minutes."): "timeLeft failed on trial one";
+        assert (timeLeft(1, 34, 8, 20)).equals ("6 hours and 46 minutes."): "timeLeft failed on trial two";
+        assert (dayOfWeek(0, 1)) == 0: "dayOfWeek failed on trial one";
+        assert (dayOfWeek(0, 14)) == 6: "dayOfWeek failed on trial two";
+        assert (dayOfWeek(6, 22)) == 6: "dayOfWeek failed on trial three";
+        assert (dayOfWeek(5, 4)) == 1: "dayOfWeek failed on trial four";
+        assert (dayOfWeek(1, 24)) == 3: "dayOfWeek failed on trial five";
+        assert (dayOfWeek(2, 1)) == 2: "dayOfWeek failed on trial six";
+        System.out.println("Success! Error below to prove valid syntax used for assert.");
+        assert ("2+2").equals ("fish"): "valid syntax proof. NOT AN ERROR!";
     }
     /**swaps the last two digits of an integer*/
     static int swap(final int numin)
