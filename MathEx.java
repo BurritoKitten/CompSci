@@ -1,6 +1,5 @@
-import java.util.Scanner;
 public class MathEx
-{
+{   
     public static void main(String[] args)
     {
         assert (swap(123)) == 132: "swap failed on trial one";
@@ -15,23 +14,23 @@ public class MathEx
         assert (dayOfWeek(1, 24)) == 3: "dayOfWeek failed on trial five";
         assert (dayOfWeek(2, 1)) == 2: "dayOfWeek failed on trial six";
         System.out.println("Success! Error below to prove valid syntax used for assert.");
-        assert ("2+2").equals ("fish"): "valid syntax proof. NOT AN ERROR!";
+        assert (false): "valid syntax proof. NOT AN ERROR!";
     }
     /**swaps the last two digits of an integer*/
     static int swap(final int numin)
     {
         return ((numin/100)*100)+((numin/10)%10)+((numin%10)*10);
     }
-    /**returns amount of time between two given times*/
+    /**returns amount of time between two given times. (4:20-3:40="0 hours and 40 minutes")*/
     static String timeLeft (final int curHour, final int curMin, final int depHour, final int depMin) 
     {
+        final int adjustedHour = (curMin <= depMin) ? (depHour) : (depHour - 1);
+        assert ((curHour <= adjustedHour)): "invalid input supplied for timeLeft";
         final int outHour = (curMin <= depMin) ? (depHour - curHour) : (depHour - 1 - curHour);
         final int outMin  = (curMin <= depMin) ? (depMin - curMin)   : (depMin + 60 - curMin);
         return outHour + " hours and " + outMin + " minutes.";     
     }
-    /**returns the current day of week given the day of week the month started on and current date.
-     *(0 - Sunday, 2 - Monday, ETC.)
-    */
+    /**returns the current day of week given the day of week the month started on and current date. (0-Sunday, 1-Monday, etc.)*/
     static int dayOfWeek(final int firstDay, final int curDate)
     {
         return (((curDate-1)+firstDay)%7);
