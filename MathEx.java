@@ -2,6 +2,21 @@ public class MathEx
 {   
     public static void main(String[] args)
     {
+        System.out.println (swap(123  ));
+        System.out.println (swap(1234 ));
+        System.out.println (swap(12345));
+        
+        System.out.println (timeLeft(1, 15, 4, 36));
+        System.out.println (timeLeft(1, 34, 8, 20));
+        
+        System.out.println (dayOfWeek(0, 1 ));
+        System.out.println (dayOfWeek(0, 14));
+        System.out.println (dayOfWeek(6, 22));
+        System.out.println (dayOfWeek(5, 4 ));
+        System.out.println (dayOfWeek(1, 24));
+        System.out.println (dayOfWeek(2, 1 ));
+
+
         assert (swap(123  )) == 132  : "swap failed on trial one"  ;
         assert (swap(1234 )) == 1243 : "swap failed on trial two"  ;
         assert (swap(12345)) == 12354: "swap failed on trial three";
@@ -16,7 +31,6 @@ public class MathEx
         assert (dayOfWeek(1, 24)) == 3: "dayOfWeek failed on trial five" ;
         assert (dayOfWeek(2, 1 )) == 2: "dayOfWeek failed on trial six"  ;
 
-        System.out.println("Success! Error below to prove valid syntax used for assert.");
         assert (false): "valid syntax proof. NOT AN ERROR!";
     }
     /**swaps the last two digits of an integer*/
