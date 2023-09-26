@@ -7,11 +7,11 @@ public class MathEx
         System.out.println (swap(1234 ));
         System.out.println (swap(12345));
         System.out.println ();
-        timeLeft(1, 15, 4, 36);
-        timeLeft(1, 34, 8, 20);
+        timeLeftLogic(1, 15, 4, 36);
+        timeLeftLogic(1, 34, 8, 20);
         System.out.println ();
-        timeLeftNoLogic(1, 15, 4, 36);
-        timeLeftNoLogic(1, 34, 8, 20);
+        timeLeftMath(1, 15, 4, 36);
+        timeLeftMath(1, 34, 8, 20);
         System.out.println ();
         System.out.println (dayOfWeek(0, 1 ));
         System.out.println (dayOfWeek(0, 14));
@@ -27,17 +27,17 @@ public class MathEx
         return ((numin/100)*100)+((numin/10)%10)+((numin%10)*10);
     }
     /**returns amount of time between two given times using logic. (ex: 4:20-3:40="0 hours and 40 minutes")*/
-    static void timeLeft (final int curHour, final int curMin, final int depHour, final int depMin) 
+    static void timeLeftLogic (final int curHour, final int curMin, final int depHour, final int depMin) 
     {
-        assert ((curHour <= depHour & curMin <= depMin) || (curHour < depHour & curMin > depMin)): "invalid input supplied for timeLeft. deptime should be greater than curtime.";
+        assert ((curHour <= depHour & curMin <= depMin) || (curHour < depHour & curMin > depMin)): "invalid input supplied for timeLeftLogic. deptime should be greater than curtime.";
         final int outHour = (curMin <= depMin) ? (depHour - curHour) : (depHour - 1  - curHour);
         final int outMin  = (curMin <= depMin) ? (depMin  - curMin ) : (depMin  + 60 - curMin );
         System.out.println (outHour + " hours and " + outMin + " minutes.");     
     }
     /**returns amount of time between two given times using math. (ex: 4:20-3:40="0 hours and 40 minutes")*/
-    static void timeLeftNoLogic (final int curHour, final int curMin, final int depHour, final int depMin) 
+    static void timeLeftMath(final int curHour, final int curMin, final int depHour, final int depMin) 
     {
-        assert ((curHour <= depHour & curMin <= depMin) || (curHour < depHour & curMin > depMin)): "invalid input supplied for timeLeft. deptime should be greater than curtime.";
+        assert ((curHour <= depHour & curMin <= depMin) || (curHour < depHour & curMin > depMin)): "invalid input supplied for timeLeftMath. deptime should be greater than curtime.";
         int timeLeft = (((depHour*60)+depMin)-((curHour*60)+curMin));
         System.out.println ((timeLeft / 60) + " hours and " + (timeLeft % 60) + " minutes.");   
     }
