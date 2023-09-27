@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MathEx",
+            "request": "launch",
+            "mainClass": "MathEx",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "rand",
+            "request": "launch",
+            "mainClass": "rand",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
