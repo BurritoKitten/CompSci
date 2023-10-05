@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Box",
+            "request": "launch",
+            "mainClass": "Box",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "Bitonic_sorter",
+            "request": "launch",
+            "mainClass": "Bitonic_sorter",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "MathEx",
             "request": "launch",
             "mainClass": "MathEx",

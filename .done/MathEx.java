@@ -2,7 +2,8 @@ public class MathEx
 {   
     public static void main(String[] args)
     {
-        System.out.println ();
+        System.out.println ("hello");
+        System.out.print ("world");
         System.out.println (swap(123  ));
         System.out.println (swap(1234 ));
         System.out.println (swap(12345));
