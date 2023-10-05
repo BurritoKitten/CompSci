@@ -38,11 +38,28 @@ public class Frog {
 	//TODO jump method move up and to the right
 	//This method should take an integer argument.  This argument controls how many spaces
 	// the frog will move both up and right.  Returns no value.
+	public void jump(int dist)
+	{
+		yPos+=dist;
+		xPos+=dist;
+	}
+	public void jump()
+	{
+		yPos++;
+		xPos++;
+	}
+	
 	
 	//TODO visit method moves frog to the location of the friend frog
 	// This method will take an argument of type Frog.  It will find the position of the
 	// frog and move to this position.  Returns no value.
-	
+	public void visit(Frog froge)
+	{
+		xPos=froge.getXPos();
+		yPos=froge.getYPos();
+	}
+
+
 	public void eatFly()
 	{
 		System.out.println("Yum");
@@ -64,12 +81,16 @@ public class Frog {
 		Frog f2 = new Frog("Francine", -2,0);
 		f2.eatFly();
 		// TODO uncomment these to test new code.
-		//f2.jump(2);
-		//f1.visit(f2);
+		f2.jump(2);
+		f1.visit(f2);
 		System.out.println(f1);
 		System.out.println(f2);
 		
 		// make a new frog named Frank.  have him jump twice and then go visit Freddy.
+		Frog f3 = new Frog("Frank", 3, 4);
+		f3.jump(3);
+		f3.jump();
+		f3.visit(f1);
 
 	}
 

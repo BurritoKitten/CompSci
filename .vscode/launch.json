@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Frog",
+            "request": "launch",
+            "mainClass": "Frog",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "Box",
             "request": "launch",
             "mainClass": "Box",
