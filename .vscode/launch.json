@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fraction",
+            "request": "launch",
+            "mainClass": "Fraction",
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
             "name": "Frog",
             "request": "launch",
             "mainClass": "Frog",
