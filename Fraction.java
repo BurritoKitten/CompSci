@@ -77,7 +77,8 @@ public class Fraction {
 		System.out.println("3/4 + 4/5 = " + f3);	// print the answer
 			
 		Fraction f4 = f1.subtract(f2);
-        assert((""+f4).equals("-1/20")):"subtract returned wrong answer"; //remove, testing
+		System.out.println(""+f4);
+        //assert((""+f4).equals("-1/20")):"subtract returned wrong answer"; //remove, testing
 		
 		/*
 		Add code to multiply f1 and f2 here
@@ -87,14 +88,15 @@ public class Fraction {
 		create 2 new fractions and add them here.
 		
 		*/	
-		
-		assert((""+f1.multiply(f2)).equals("12/20")):"multiply returned wrong answer"; //remove, testing
-
-        assert((""+f1.reciprocal()).equals("4/3")):"reciprocal returned wrong answer"; //remove, testing
+		System.out.println(""+f1.multiply(f2));
+		//assert((""+f1.multiply(f2)).equals("12/20")):"multiply returned wrong answer"; //remove, testing
+		System.out.println(""+f1.reciprocal());
+        //assert((""+f1.reciprocal()).equals("4/3")):"reciprocal returned wrong answer"; //remove, testing
 
 		Fraction f5 = new Fraction(7,23);
 		Fraction f6 = new Fraction(11,5);
-		
+		System.out.println(f5);
+		System.out.println(f6);
 
 		//assert(false):"NOT ERROR, proof of concept"; //remove, testing
 
