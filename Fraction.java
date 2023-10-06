@@ -38,7 +38,7 @@ public class Fraction {
 	// TODO  subtract()
 	public Fraction subtract(Fraction other)
 	{
-		int n = this.numerator*other.denominator - this.denominator*other.numerator;
+		int n = this.numerator*other.getDenom() - this.denominator*other.getNum();
 		int d = this.denominator * other.getDenom();
 		
 		Fraction result = new Fraction(n,d);
@@ -47,8 +47,8 @@ public class Fraction {
 	// TODO multiply()
 	public Fraction multiply(Fraction other)
 	{
-		int n = this.numerator*other.numerator;
-		int d = this.denominator*other.denominator;
+		int n = numerator*other.getNum();
+		int d = denominator*other.getDenom();
 		
 		Fraction result = new Fraction(n,d);
 		return result;
@@ -77,8 +77,8 @@ public class Fraction {
 		System.out.println("3/4 + 4/5 = " + f3);	// print the answer
 			
 		Fraction f4 = f1.subtract(f2);
-		System.out.println(""+f4);
-        //assert((""+f4).equals("-1/20")):"subtract returned wrong answer"; //remove, testing
+		System.out.println(f1+" - "+f2+" = "+f4);
+        	assert((""+f4).equals("-1/20")):"subtract returned wrong answer"; //remove, testing
 		
 		/*
 		Add code to multiply f1 and f2 here
@@ -88,15 +88,17 @@ public class Fraction {
 		create 2 new fractions and add them here.
 		
 		*/	
-		System.out.println(""+f1.multiply(f2));
-		//assert((""+f1.multiply(f2)).equals("12/20")):"multiply returned wrong answer"; //remove, testing
-		System.out.println(""+f1.reciprocal());
-        //assert((""+f1.reciprocal()).equals("4/3")):"reciprocal returned wrong answer"; //remove, testing
+		
+		System.out.println(f1+" * "+f2+" = "+f1.multiply(f2));
+			assert((""+f1.multiply(f2)).equals("12/20")):"multiply returned wrong answer"; //remove, testing
+		System.out.println("The reciprocal of "+f1+" is "+f1.reciprocal());
+        	assert((""+f1.reciprocal()).equals("4/3")):"reciprocal returned wrong answer"; //remove, testing
 
-		Fraction f5 = new Fraction(7,23);
-		Fraction f6 = new Fraction(11,5);
+		Fraction f5 = new Fraction();
+		Fraction f6 = new Fraction(7,5);
 		System.out.println(f5);
 		System.out.println(f6);
+		System.out.println(f5+" + "+f6+" = "+(f5.add(f6)));
 
 		//assert(false):"NOT ERROR, proof of concept"; //remove, testing
 
