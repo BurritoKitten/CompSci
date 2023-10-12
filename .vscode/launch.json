@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Poll",
+            "request": "launch",
+            "mainClass": "Poll",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "PollDisplayPanel",
+            "request": "launch",
+            "mainClass": "PollDisplayPanel",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "Fraction",
             "request": "launch",
             "mainClass": "Fraction",
