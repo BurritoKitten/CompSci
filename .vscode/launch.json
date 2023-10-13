@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Panel",
+            "request": "launch",
+            "mainClass": "Panel",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "Poll",
             "request": "launch",
             "mainClass": "Poll",

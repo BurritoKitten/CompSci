@@ -56,7 +56,7 @@ public class PollDisplayPanel extends JPanel
   public String toString()
   {
 	// create a string here that looks like: Tam1 : 1 ; Brian : 2 ; Liz : 0 ;
-    return  name1+" : "+count1+" ; "+name1+" : "+count1+" ; "+name1+" : "+count1+" ; ";
+    return  name1+" : "+count1+" ; "+name2+" : "+count2+" ; "+name3+" : "+count3+" ; ";
   }
 
   // Redefines JPanel's paintComponent to draw this pie chart
