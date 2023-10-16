@@ -9,7 +9,7 @@ public class Panel extends JFrame
 
     Container c = getContentPane();
     c.setBackground(Color.WHITE);
-    PollDisplayPanel chart = new PollDisplayPanel("Tami", "Brian", "Liz");
+    PanelDisplay chart = new PanelDisplay("Tami", "Brian", "Liz");
     PanelControls controls = new PanelControls(chart);
     //c.add(chart, BorderLayout.CENTER);
     c.add(controls, BorderLayout.SOUTH);

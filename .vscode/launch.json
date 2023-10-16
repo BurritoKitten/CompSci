@@ -6,24 +6,59 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CylinderTest",
+            "request": "launch",
+            "mainClass": "CylinderTest",
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "Line",
+            "request": "launch",
+            "mainClass": "Line",
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "Pollv2",
+            "request": "launch",
+            "mainClass": "Pollv2",
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
             "name": "Panel",
             "request": "launch",
             "mainClass": "Panel",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "Poll",
             "request": "launch",
             "mainClass": "Poll",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "PollDisplayPanel",
             "request": "launch",
             "mainClass": "PollDisplayPanel",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
@@ -38,41 +73,47 @@
             "name": "Frog",
             "request": "launch",
             "mainClass": "Frog",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "Box",
             "request": "launch",
             "mainClass": "Box",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "Bitonic_sorter",
             "request": "launch",
             "mainClass": "Bitonic_sorter",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "MathEx",
             "request": "launch",
             "mainClass": "MathEx",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "rand",
             "request": "launch",
             "mainClass": "rand",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",
             "name": "Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "vmArgs": "-ea"
         },
         {
             "type": "java",

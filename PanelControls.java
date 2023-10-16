@@ -10,9 +10,9 @@ public class PanelControls extends JPanel
                           implements ActionListener
 {
   private JButton button1, button2, button3;
-  private PollDisplayPanel chartPanel;
+  private PanelDisplay chartPanel;
 
-  public PanelControls(PollDisplayPanel chart)
+  public PanelControls(PanelDisplay chart)
   {
     chartPanel = chart;
 
