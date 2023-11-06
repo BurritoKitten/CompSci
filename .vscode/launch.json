@@ -9,7 +9,9 @@
             "name": "conditionals",
             "request": "launch",
             "mainClass": "conditionals",
-            "projectName": "CompSci_e13f301b"
+            "projectName": "CompSci_e13f301b",
+            "vmArgs": "-ea"
+
         },
         {
             "type": "java",
