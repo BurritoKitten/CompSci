@@ -2,8 +2,7 @@ public class CondEx {
     public boolean isLeapYear(int year)
     {
         if (year%400 == 0 || year%4 == 0) return true;
-        if (year%100 == 0) return false;
-        return true;
+        return (year%100 != 0);
     }
 
     public boolean isSooner(int month1, int day1, int year1, int month2, int day2, int year2)
@@ -36,8 +35,7 @@ public class CondEx {
         int unusedSmall = small-goal%5;
         int unusedSmallRounded = (unusedSmall)/5*5;
         int bigTotalLength = big*5;
-        if (goalRounded > bigTotalLength+(unusedSmallRounded)) return false;
-        return true;
+        return (goalRounded <= bigTotalLength+(unusedSmallRounded));
     }
 
     public static void main(String[] args)
