@@ -6,12 +6,25 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoSpinners",
+            "request": "launch",
+            "mainClass": "TwoSpinners",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "CondEx",
+            "request": "launch",
+            "mainClass": "CondEx",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "conditionals",
             "request": "launch",
             "mainClass": "conditionals",
             "projectName": "CompSci_e13f301b",
             "vmArgs": "-ea"
-
         },
         {
             "type": "java",
