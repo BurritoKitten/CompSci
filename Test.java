@@ -1,12 +1,15 @@
 public class Test {
-    public static void main(String[] args) {
-        double fact1 = 1 / 2;
-
-        double fact2 = 3 * 4;
-        
-        double product = fact1 * fact2;
-        
-        System.out.println(product);
+    public static void main(String[] args) 
+    {
+        System. out. println("+----+");
+        for (int i = 1; i<=3; i++)
+        {
+            System. out . println("\\    /");
+            System. out . println("/    \\");
+        }
+        System. out. println("+----+");
     }
-
 }
+
+
+    

@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Dec2FracForward",
+            "request": "launch",
+            "mainClass": "Dec2FracForward",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "Dec2FracDebug",
+            "request": "launch",
+            "mainClass": "Dec2FracDebug",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "Dec2Frac",
+            "request": "launch",
+            "mainClass": "Dec2Frac",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "NestedTriangleLoops",
+            "request": "launch",
+            "mainClass": "NestedTriangleLoops",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "ForLoops",
+            "request": "launch",
+            "mainClass": "ForLoops",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "Factorial",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "WhileLoops",
+            "request": "launch",
+            "mainClass": "WhileLoops",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "CrapsStats",
+            "request": "launch",
+            "mainClass": "CrapsStats",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "CrapsTest1",
+            "request": "launch",
+            "mainClass": "CrapsTest1",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
+            "name": "Craps",
+            "request": "launch",
+            "mainClass": "Craps",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "TwoSpinners",
             "request": "launch",
             "mainClass": "TwoSpinners",
