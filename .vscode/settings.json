@@ -71,5 +71,6 @@
         "xlocmon": "cpp",
         "xloctime": "cpp",
         "xtree": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

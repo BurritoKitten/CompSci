@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "stringExercises",
+            "request": "launch",
+            "mainClass": "stringExercises",
+            "projectName": "CompSci_e13f301b"
+        },
+        {
+            "type": "java",
             "name": "Dec2FracForward",
             "request": "launch",
             "mainClass": "Dec2FracForward",

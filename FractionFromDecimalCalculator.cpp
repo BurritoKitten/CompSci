@@ -3,7 +3,7 @@
 #include "Fraction.cpp"
 #include <unistd.h>
 
-int main(std::string args)
+int main()
 {
     using namespace std;
     Fraction whatIsValue = Fraction();
@@ -15,8 +15,7 @@ int main(std::string args)
     double testPrescision = 3;
     cout << "What presicion would you like?\n";
     cin >> testPrescision;
-    if (args.find("denominator"))
-        whatIsValue.decimalValue(testNum, testPrescision);
+    whatIsValue.decimalValue(testNum, testPrescision);
     cout << "\nThe requested fraction is ";
     whatIsValue.printFraction();
     cout << "\nThis has a value of ";

@@ -8,10 +8,7 @@ private:
     int denominator_{1};
 
 public:
-    Fraction(int numeratorIn, int denominatorIn)
-        : numerator_(numeratorIn), denominator_(denominatorIn)
-    {
-    }
+    Fraction(int numeratorIn, int denominatorIn) : numerator_(numeratorIn), denominator_(denominatorIn) {}
     Fraction() {}
 
     void numerator(int numerator_) { this->numerator_ = numerator_; }
