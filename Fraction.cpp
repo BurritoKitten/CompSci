@@ -46,7 +46,7 @@ public:
     void decimalValueGivenMaxBase(double target, double precision, int denominator = 1)
     {
         Fraction workingFraction = Fraction(0, 0);
-        Fraction currentBest = Fraction();
+        Fraction currentBest = Fraction(); 
         while (workingFraction.denominator() <= precision)
         {
             workingFraction.denominator(workingFraction.denominator() + 1);
