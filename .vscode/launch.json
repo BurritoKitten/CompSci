@@ -6,6 +6,34 @@
     "configurations": [
       {
         "type": "java",
+        "name": "NitalTester",
+        "request": "launch",
+        "mainClass": "NitalTester",
+        "projectName": "CompSci_e13f301b"
+      },
+      {
+        "type": "java",
+        "name": "WordPuzzle",
+        "request": "launch",
+        "mainClass": "WordPuzzle",
+        "projectName": "CompSci_e13f301b"
+      },
+      {
+        "type": "java",
+        "name": "CarCharger",
+        "request": "launch",
+        "mainClass": "CarCharger",
+        "projectName": "CompSci_e13f301b"
+      },
+      {
+        "type": "java",
+        "name": "GradeAverage",
+        "request": "launch",
+        "mainClass": "GradeAverage",
+        "projectName": "CompSci_e13f301b"
+      },
+      {
+        "type": "java",
         "name": "SoccerTeam",
         "request": "launch",
         "mainClass": "SoccerTeam",

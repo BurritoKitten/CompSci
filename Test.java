@@ -1,14 +1,29 @@
+import java.util.Arrays;
 public class Test {
-  public static int maxValue(int[] list) {
-    int max = list[0];
-    for (int i = 0; i < list.length - 1; i++) {
-      max = Math.max(list[i], list[i + 1]);
+  private int[] array;
+  public Test(int[] aIn){
+    array = aIn;
+  }
+  public void randomize(){
+    for (int val : array)
+    {
+      val = (int)(Math.random()*100);
     }
-    return max;
+  }
+  public void print(){
+    System.out.println(array.toString());
+    for (int val : array)
+    {
+      System.out.print(val+" ");
+    }
   }
 
   public static void main(String[] args) {
-    int max = maxValue({12, 7, -1, 25, 3, 9});
-    System.out.println(max);
+    int[][] array = new int[3][5];
+    System.out.println(Arrays.deepToString(array));
+    int num = 0;
+    int num1 = num++;
+    int num2 = num++;
+    System.out.println(num+" "+num1+" "+num2);
   }
 }
